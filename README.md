@@ -39,10 +39,10 @@ We think this is wrong because:
 So we added 2 new protocols on the router
 
 ```swift
-protocol RouterDataSource:class {
+protocol RouterDataSource: class {
 
 }
-protocol RouterDataDestination:class {
+protocol RouterDataDestination: class {
 
 }
 ```
@@ -50,23 +50,23 @@ protocol RouterDataDestination:class {
 - The RouterDataDestination protocol is used to determine what data has to be received and handled by this scene.
 
 So following the example before we would add this in the source Router:
-```swift 
-protocol UserListRouterDataSource:class {
+```swift
+protocol UserListRouterDataSource: class {
     var selectedUser:User! { get }
 }
 
-protocol UserListRouterDataDestination:class {
+protocol UserListRouterDataDestination: class {
 
 }
 ```
 
 And this in the destination:
 ```swift
-protocol UserDetailRouterDataSource:class {
+protocol UserDetailRouterDataSource: class {
 
 }
 
-protocol UserDetailRouterDataDestination:class {
+protocol UserDetailRouterDataDestination: class {
     var user:User! {get set}
 }
 ```
@@ -78,15 +78,15 @@ let user = dataSource.selectedUser
 userDetailViewController.router.dataDestination.user = user
 ```
 
-As previously mentioned we believe this handling should be done by the Interactor aswell but without the ViewController knowing it so we added the protocols there and changed the Configurator.swift in order to connect both protocols.
+As previously mentioned we believe this handling should be done by the Interactor as well but without the ViewController knowing it so we added the protocols there and changed the Configurator.swift in order to connect both protocols.
 
 So the source Interactor would look like this:
 ```swift
-protocol UserListDataSource {
+protocol UserListDataSource: class {
     var selectedUser:User! { get }
 }
 
-protocol UserListDataDestination {
+protocol UserListDataDestination: class {
 
 }
 
@@ -96,18 +96,16 @@ class UserListInteractor: UserListInteractorInput, UserListDataSource, UserListD
 And as you would assume, the destination Interactor looks like this:
 
 ```swift
-protocol UserDetailDataSource {
+protocol UserDetailDataSource: class {
 
 }
 
-protocol UserDetailDataDestination {
+protocol UserDetailDataDestination: class {
     var user:User! {get set}
 }
 
 class UserDetailInteractor: UserDetailInteractorInput, UserDetailDataSource, UserDetailDataDestination {
 ```
-
-You can see a working example in the Example folder.
 
 # Installation
 
@@ -120,17 +118,3 @@ To uninstall the Clean Swift Xcode templates and snippets, run:
 ```
 make uninstall
 ```
-
-
-To try the Example project you need carthage:
-```
-brew update
-brew install carthage
-```
-
-Then run
-```
-carthage update
-```
-
-In the project folder (/Example)
