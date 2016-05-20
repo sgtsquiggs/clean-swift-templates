@@ -52,7 +52,7 @@ protocol RouterDataDestination: class {
 So following the example before we would add this in the source Router:
 ```swift
 protocol UserListRouterDataSource: class {
-    var selectedUser:User! { get }
+  var selectedUser:User! { get }
 }
 
 protocol UserListRouterDataDestination: class {
@@ -67,7 +67,7 @@ protocol UserDetailRouterDataSource: class {
 }
 
 protocol UserDetailRouterDataDestination: class {
-    var user:User! {get set}
+  var user:User! { get set }
 }
 ```
 
@@ -83,7 +83,7 @@ As previously mentioned we believe this handling should be done by the Interacto
 So the source Interactor would look like this:
 ```swift
 protocol UserListDataSource {
-    var selectedUser:User! { get }
+  var selectedUser:User! { get }
 }
 
 protocol UserListDataDestination {
@@ -101,7 +101,7 @@ protocol UserDetailDataSource {
 }
 
 protocol UserDetailDataDestination {
-    var user:User! {get set}
+  var user:User! { get set }
 }
 
 class UserDetailInteractor: UserDetailInteractorInput, UserDetailDataSource, UserDetailDataDestination {
