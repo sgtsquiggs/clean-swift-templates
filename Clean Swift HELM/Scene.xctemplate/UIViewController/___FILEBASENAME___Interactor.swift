@@ -11,26 +11,25 @@
 import UIKit
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-    
+
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
-    
+
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___DataSource {
-    
+protocol ___FILEBASENAMEASIDENTIFIER___DataSource: class {
+
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___DataDestination {
-    
+protocol ___FILEBASENAMEASIDENTIFIER___DataDestination: class {
+
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput, ___FILEBASENAMEASIDENTIFIER___DataSource, ___FILEBASENAMEASIDENTIFIER___DataDestination {
-    
-    var output: ___FILEBASENAMEASIDENTIFIER___InteractorOutput!
-    
-    // MARK: Business logic
-    
+
+  var output: ___FILEBASENAMEASIDENTIFIER___InteractorOutput!
+
+  // MARK: Business logic
 
 }
