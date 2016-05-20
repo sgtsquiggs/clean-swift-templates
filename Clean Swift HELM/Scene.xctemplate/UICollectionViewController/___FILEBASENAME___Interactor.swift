@@ -18,11 +18,11 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
 
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___DataSource: class {
+protocol ___FILEBASENAMEASIDENTIFIER___DataSource {
 
 }
 
-protocol ___FILEBASENAMEASIDENTIFIER___DataDestination: class {
+protocol ___FILEBASENAMEASIDENTIFIER___DataDestination {
 
 }
 

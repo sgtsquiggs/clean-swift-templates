@@ -82,11 +82,11 @@ As previously mentioned we believe this handling should be done by the Interacto
 
 So the source Interactor would look like this:
 ```swift
-protocol UserListDataSource: class {
+protocol UserListDataSource {
     var selectedUser:User! { get }
 }
 
-protocol UserListDataDestination: class {
+protocol UserListDataDestination {
 
 }
 
@@ -96,11 +96,11 @@ class UserListInteractor: UserListInteractorInput, UserListDataSource, UserListD
 And as you would assume, the destination Interactor looks like this:
 
 ```swift
-protocol UserDetailDataSource: class {
+protocol UserDetailDataSource {
 
 }
 
-protocol UserDetailDataDestination: class {
+protocol UserDetailDataDestination {
     var user:User! {get set}
 }
 
