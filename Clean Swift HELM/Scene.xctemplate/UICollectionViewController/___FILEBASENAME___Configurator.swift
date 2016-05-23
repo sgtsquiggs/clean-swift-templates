@@ -21,6 +21,7 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Configurator {
+
   // MARK: Object lifecycle
 
   static let sharedInstance = ___FILEBASENAMEASIDENTIFIER___Configurator()
@@ -28,7 +29,6 @@ class ___FILEBASENAMEASIDENTIFIER___Configurator {
   // MARK: Configuration
 
   func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
-
     let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter()
     presenter.output = viewController
 

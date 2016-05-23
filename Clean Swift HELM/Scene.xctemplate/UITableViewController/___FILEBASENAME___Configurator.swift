@@ -21,6 +21,7 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Configurator {
+
   // MARK: Object lifecycle
 
   static let sharedInstance = ___FILEBASENAMEASIDENTIFIER___Configurator()
