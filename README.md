@@ -1,6 +1,8 @@
-# Clean-swift templates
+# Clean Swift templates ([Tailor](https://github.com/sleekbyte/tailor) compliant)
 
-This is a modification of Clean Swift Templates (http://clean-swift.com) made by HELM (www.helm.cat)
+This is a modification of a modification of Raymond Law's [Clean Swift](http://clean-swift.com) templates.
+
+The original modifications were made by [HELM](www.helm.cat).
 
 To learn more about Clean Swift and the VIP cycle, read:
 
@@ -8,20 +10,25 @@ http://clean-swift.com/clean-swift-ios-architecture
 
 # Changelog
 
-This modification aims to create work-ready templates and snippets to achieve the maximum efficiency for people who are already familiar with them. Furthermore we added some extra features in order to attempt to solve some issues.
+The HELM modification aims to create work-ready templates and snippets to achieve the maximum efficiency for people who are already familiar with them. Furthermore HELM added extra features in order to attempt to solve some issues.
+
+I have taken the HELM-modified templates and reformatted them to match the [Tailor](https://github.com/sleekbyte/tailor) formatting guidelines, for those of us using Tailor to enforce standarized code formatting.
 
 Here is a list of what is modified:
-* Indent is changed to a standarized 4-spaces indent
 * Braces follow the OTBS (https://en.wikipedia.org/wiki/Indent_style#Variant:_1TBS)
 * Deleted all example functions (doSomething, presentSomething, etc.) aswell as example models
 * Deleted worker auto-creation from Scene template
+* Singleton using the simpler `static let sharedInstance = ClassName()` format
 
 Added features:
-* Awesome snippet to create usecases
-* New data-passing method
+* Awesome snippet to create usecases (HELM)
+* New data-passing method (HELM)
+* Store template (HELM)
 
 ## Snippet
 ![alt text](http://helm.cat/assets/github-images/usecase-snippet.gif "Use Case Snippet")
+
+(note: actual snippet uses two spaces not four)
 
 ## New data-passing method
 Previously to pass data we need to do something like this in the source Router:
