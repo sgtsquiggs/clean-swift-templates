@@ -37,7 +37,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewControllerTests: XCTestCase {
   func setup___FILEBASENAMEASIDENTIFIER___ViewController() {
     let bundle = NSBundle.mainBundle()
     let storyboard = UIStoryboard(name: "Main", bundle: bundle)
-    sut = storyboard.instantiateViewControllerWithIdentifier("___FILEBASENAMEASIDENTIFIER___ViewController") as! ___FILEBASENAMEASIDENTIFIER___ViewController
+    sut = storyboard.instantiateViewControllerWithIdentifier("___FILEBASENAMEASIDENTIFIER___ViewController") as! ___FILEBASENAMEASIDENTIFIER___ViewController  // tailor:disable
   }
 
   func loadView() {
