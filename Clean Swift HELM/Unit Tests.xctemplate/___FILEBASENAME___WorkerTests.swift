@@ -13,6 +13,7 @@
 import XCTest
 
 class ___FILEBASENAMEASIDENTIFIER___WorkerTests: XCTestCase {
+
   // MARK: Subject under test
 
   var sut: ___FILEBASENAMEASIDENTIFIER___Worker!

@@ -13,6 +13,7 @@
 import XCTest
 
 class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
+
   // MARK: Subject under test
 
   var sut: ___FILEBASENAMEASIDENTIFIER___Interactor!
