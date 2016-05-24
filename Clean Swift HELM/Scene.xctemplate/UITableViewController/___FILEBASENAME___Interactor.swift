@@ -10,18 +10,22 @@
 
 import UIKit
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___Interactor
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput {
 
 }
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___Presenter
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
 
 }
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___Interactor
 protocol ___FILEBASENAMEASIDENTIFIER___DataSource {
 
 }
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___Interactor
 protocol ___FILEBASENAMEASIDENTIFIER___DataDestination {
 
 }

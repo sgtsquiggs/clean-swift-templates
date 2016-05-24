@@ -10,10 +10,12 @@
 
 import UIKit
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___Presenter
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterInput {
 
 }
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___ViewController
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput: class {
 
 }

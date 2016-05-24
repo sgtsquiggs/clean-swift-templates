@@ -10,10 +10,12 @@
 
 import UIKit
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___ViewController
 protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerInput {
 
 }
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___Interactor
 protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {
 
 }

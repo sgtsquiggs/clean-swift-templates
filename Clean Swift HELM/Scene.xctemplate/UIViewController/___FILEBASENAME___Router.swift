@@ -10,14 +10,17 @@
 
 import UIKit
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___Router
 protocol ___FILEBASENAMEASIDENTIFIER___RouterInput {
 
 }
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___Interactor
 protocol ___FILEBASENAMEASIDENTIFIER___RouterDataSource: class {
 
 }
 
+// Implemented by ___FILEBASENAMEASIDENTIFIER___Interactor
 protocol ___FILEBASENAMEASIDENTIFIER___RouterDataDestination: class {
 
 }
